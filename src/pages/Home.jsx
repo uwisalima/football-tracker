@@ -65,7 +65,7 @@ function Home() {
 
               <Results results={result} /> 
              
-              {/* <Results results={db} /> */}
+              <Results results={db} />
             </div>
           )}
     </>

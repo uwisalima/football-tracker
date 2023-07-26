@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 function Results({ results }) {
   return (
@@ -65,6 +66,11 @@ function Results({ results }) {
                   >
                     TEAM
                   </span>
+                  {result.type === "player" && (
+                    <Link to={`/statistics/${result.entity.id}`}>
+                      <button className="text-indigo-400 mx-6 font-semibold hover:underline">Player Statistics</button>
+                    </Link>
+                  )}
                 </p>
               </div>
             )}

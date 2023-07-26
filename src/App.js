@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Statistics from "./pages/Statistics";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
     <div className="text-gray-400">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/statistics/:id" element={<Statistics />} />
       </Routes>
     </div>
   );
